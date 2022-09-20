@@ -1,0 +1,11 @@
+﻿student,journal,year,volume,issue,title,authors,regression,mixed_effects,bayesian,open_data,notes
+S17,Laboratory Phonology,2022,13,1,Integrating phonological and phonetic aspects of Mandarin Tone 3 sandhi in auditory sentence disambiguation,Wei Lai and Aini Li,TRUE,TRUE,FALSE,TRUE,
+S17,Laboratory Phonology,2022,13,1,Matched-accent processing: Bulgarian-English bilinguals do not have a processing advantage with Bulgarian-accented English over native English speech,"Marie Dokovova, James M. Scobbie and Robin Lickley",TRUE,TRUE,FALSE,TRUE,
+S17,Laboratory Phonology,2022,13,1,Producing and perceiving socially structured coarticulation: Coarticulatory nasalization in Afrikaans,"Andries W. Coetzee, Patrice Speeter Beddor, Will Styler, Stephen Tobin, Ian Bekker and Daan Wissing",TRUE,FALSE,FALSE,TRUE,the study uses GAMMS and principle component analysis
+S17,Laboratory Phonology,2022,13,1,Production and perception across three Hong Kong Cantonese consonant mergers: Community- and individual-level perspectives,"Lauretta S. P. Cheng, Molly Babel and Yao Yao",TRUE,TRUE,FALSE,TRUE,
+S17,Laboratory Phonology,2022,13,1,Juncture prosody across languages: Similar production but dissimilar perception,Martin Ho Kwan Ip and Anne Cutler,TRUE,TRUE,FALSE,TRUE,
+S17,Laboratory Phonology,2012,3,2,Differential contribution of prosodic cues in the native and non-native segmentation of French speech,"Annie Tremblay, Caitlin E. Coughlin, Carly Bahler, Stéphanie Gaillard",TRUE,TRUE,FALSE,FALSE,
+S17,Laboratory Phonology,2012,3,2,Tonal Center of Gravity: A global approach to tonal implementation in a level-based intonational phonology,"Jonathan Barnes, Nanette Veilleux, Alejna Brugos and Stefanie Shattuck-Hufnagel",TRUE,FALSE,FALSE,FALSE,
+S17,Laboratory Phonology,2012,3,2,A cross-modal account for synchronic and diachronic patterns of /f/ and /θ/ in English,"Grant McGuire, Molly Babel",FALSE,FALSE,FALSE,FALSE,ANOVA nad Tukey test
+S17,Laboratory Phonology,2012,3,2,"On the role of substance, locality, and amount of exposure in the acquisition of morphophonemic alternations","Dinah Baer-Henney, Ruben van de Vijver",TRUE,FALSE,FALSE,FALSE,
+S17,Laboratory Phonology,2012,3,2,The phonetics and phonology of Dutch mid vowels before /l/,"Bert Botma, Koen Sebregts, Dick Smakman",TRUE,TRUE,FALSE,FALSE,

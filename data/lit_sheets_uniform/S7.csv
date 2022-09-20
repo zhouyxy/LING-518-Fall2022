@@ -1,0 +1,11 @@
+﻿student,journal,year,volume,issue,title,authors,regression,mixed_effects,bayesian,open_data,notes
+S7,Phonetica,2022,79,3,The role of f0 shape and phrasal position in Papuan Malay and American English word identification,"Constantijn Kaland, Matthew K. Gordon",TRUE,TRUE,FALSE,FALSE,"is ""linear mixed modeling"" mixed-effects?"
+S7,Phonetica,2022,79,3,Makkan Arabic does not have post-focus compression: a production and perception study,Muhammad Swaileh Alzaidi,TRUE,TRUE,FALSE,TRUE,"They just put the data all in the paper, not sure if that counts as open (you'd have to copy-paste)"
+S7,Phonetica,2022,79,2,Bengali nasal vowels: lexical representation and listener perception,"Sandra Kotzor, Allison Wetterlin, Adam Charles Roberts, Henning Reetz, Aditi Lahiri",TRUE,TRUE,FALSE,FALSE,Std Errors in appendix but not raw data
+S7,Phonetica,2022,79,2,Northern Raglai voicing and its relation to Southern Raglai register: evidence for early stages of registrogenesis,"Mark Brunelle, Jeanne Brown, Phạm Thị Thu Hà",TRUE,TRUE,FALSE,TRUE,
+S7,Phonetica,2022,79,2,Post-focus compression in Brahvi and Balochi,"Nasir Abbas Syed, Abdul Waheed Shah, Anqi Xu, Yi Xu",TRUE,TRUE,FALSE,FALSE,Every single one of these was a linear mixed-effects model so if that's Bayesian fundamentally then that column needs to be all TRUE
+S7,Phonetica,2012,69,1,At the Edge of Intonation: The Interplay of Utterance-Final F0 Movements and Voiceless Fricative Sounds,Oliver Niebuhr,TRUE,FALSE,FALSE,FALSE,Just used ANOVAs
+S7,Phonetica,2012,69,1,Intonation Adapts to Lexical Tone: The Case of Kammu,"Anastasia Karlsson, David House, Jan-Olof Svantesson",FALSE,FALSE,FALSE,FALSE,I don't think there was any model at all?
+S7,Phonetica,2012,69,1,Making Sense of Outliers,Richard Ogden,FALSE,FALSE,FALSE,TRUE,Data was from a corpus so technically open?
+S7,Phonetica,2012,69,1,The Perception of Lexical Stress in German: Effects of Segmental Duration and Vowel Quality in Different Prosodic Patterns,Klaus J. Kohler,TRUE,FALSE,FALSE,FALSE,Method was RM-ANOVA; only thing made available were test stimuli
+S7,Phonetica,2012,69,1,Intelligibility of Non-Natively Produced Dutch Words: Interaction between Segmental and Suprasegmental Errors,"Johanneke Caspers, Katarzyna Horłoza",TRUE,FALSE,FALSE,FALSE,RM-ANOVA

@@ -1,0 +1,11 @@
+﻿student,journal,year,volume,issue,title,authors,regression,mixed_effects,bayesian,open_data,notes
+S23,Journal of Psycholinguistic Research,2022,51,4,Binding Out of Relative Clauses in Native and Non-native Sentence Comprehension,Claudia Felser; Janna-Deborah Drummer,TRUE,TRUE,FALSE,TRUE,
+S23,Journal of Psycholinguistic Research,2022,51,4,The Same yet Different: Oral and Silent Reading in Children and Adolescents with Dyslexia,Madelon van den Boer; Loes Bazen; Elise de Bree ,FALSE,FALSE,FALSE,FALSE,ANOVA used
+S23,Journal of Psycholinguistic Research,2022,51,4,Are Second Person Masculine Generics Easier to Process for Men than for Women? Evidence from Polish,Agnieszka Szuba; Theresa Redl; Helen de Hoop,FALSE,TRUE,FALSE,FALSE,ANOVA used; stats available but not all the raw data
+S23,Journal of Psycholinguistic Research,2022,51,4,Determiner-Number Specification and Non-Local Agreement Computation in L1 and L2 Processing,Yesi Cheng; Jason Rothman; Ian Cunnings,FALSE,TRUE,FALSE,TRUE,
+S23,Journal of Psycholinguistic Research,2022,51,4,Listen-and-repeat training in the learning of non-native consonant duration contrasts: influence of consonant type as reflected by MMN and behavioral methods,Antti Saloranta; Leena Maria Heikkola; Maija S. Peltola,FALSE,FALSE,FALSE,FALSE,"ANOVA, t-test used"
+S23,Journal of Psycholinguistic Research,2010,39,6,Decreased Sensitivity to Phonemic Mismatch in Spoken Word Processing in Adult Developmental Dyslexia,Esther Janse; Elise de Bree; Susanne Brouwer,FALSE,FALSE,FALSE,FALSE,ANOVA used; stats available but not all the raw data
+S23,Journal of Psycholinguistic Research,2011,40,4,Processing of a Free Word Order Language: The Role of Syntax and Context,Natalia Slioussar,FALSE,FALSE,FALSE,FALSE,
+S23,Journal of Psycholinguistic Research,2013,42,2,Language Switching in the Production of Phrases,Andrzej Tarlowski; Zofia Wodniecka; Anna Marzecová ,FALSE,FALSE,FALSE,FALSE,ANOVA used
+S23,Journal of Psycholinguistic Research,2013,42,3,"Adjective Semantics, World Knowledge and Visual Context: Comprehension of Size Terms by 2- to 7-Year-Old Dutch-Speaking Children",Elena Tribushinina,FALSE,FALSE,FALSE,FALSE,"Mixed ANOVA, t-test used"
+S23,Journal of Psycholinguistic Research,2013,42,6,The Emotional Lexicon of Individuals Diagnosed with Antisocial Personality Disorder,Barbara Gawda,TRUE,FALSE,FALSE,FALSE,

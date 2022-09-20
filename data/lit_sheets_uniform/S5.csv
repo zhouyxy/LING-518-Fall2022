@@ -1,0 +1,14 @@
+student,journal,year,volume,issue,title,authors,regression,mixed_effects,bayesian,open_data,notes
+S5,journal of phonetics,2022,94,NA,"Prosodic phrasing mediates listeners’ perception of temporal cues: Evidence
+from the Korean Accentual Phrase","Jeremy Steffman, Sahyang Kim, Taehong Cho, Sun-Ah Jun",TRUE,TRUE,TRUE,TRUE,"""log-link Bayesian mixed effects model implemented using brms (Bürkner et al., 2017), as implemented with R (v 4.1.2, R Core Team, 2021), in the RStudio environment (R Studio Team, 2020).""
+
+"
+S5,journal of phonetics,2022,94,NA,American English pitch accents in variation: Pushing the boundaries of mainstream American English-ToBI conventions,"Rachel Steindel Burdina, Nicole R.Holliday, Paul E.Reed",TRUE,TRUE,FALSE,FALSE,
+S5,journal of phonetics,2022,94,NA,Constituent durations in English NNN compounds: A case of strategic speaker behavior?,"Annika Schebesta, Gero Kunter",TRUE,TRUE,FALSE,FALSE,
+S5,journal of phonetics,2022,94,NA,Who is Fu? – Perception of L2 sounds that are partially neutralized in L1,"Makiko Aoyagi, Yue Wang",TRUE,FALSE,FALSE,FALSE,"""d' score"" (Cohen's d) ""using formula [NORMSINV(H)-NORMSINV(F)] in excel"""
+S5,journal of phonetics,2022,94,NA,The influence of expectations on tonal cues to prominence,"Christine T. Röhr, Stefan Baumann, Martine Grice",TRUE,TRUE,FALSE,TRUE,
+S5,journal of phonetics,2012,40,1,Evidence for phonetic and social selectivity in spontaneous phonetic imitation,Molly Babel,TRUE,TRUE,FALSE,FALSE,
+S5,journal of phonetics,2012,40,1,Phonetic convergence in college roommates,"Pardo, Jennifer S.; Gibbons, Rachel; Suppes, Alexandra ; Krauss, Robert M.",TRUE,TRUE,FALSE,FALSE,
+S5,journal of phonetics,2012,40,6,missing title,"Khan, Sameer ud Dowla",TRUE,TRUE,FALSE,FALSE,
+S5,journal of phonetics,2012,40,6,The usefulness of metrics in the quantification of speech rhythm,"Arvaniti, Amalia",TRUE,FALSE,FALSE,FALSE,
+S5,journal of phonetics,2012,40,6,The phonetic profile of Korean formal and informal speech registers,"Winter, Bodo; Grawunder, Sven",TRUE,TRUE,FALSE,FALSE,"nice,explicitly states"

@@ -1,0 +1,11 @@
+student,journal,year,volume,issue,title,authors,regression,mixed_effects,bayesian,open_data,notes
+S13,Language Variation and Change,2022,34,1,The Status of ain't in Philadelphia African American English,Sabriya Fisher,TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2022,34,1,A variationist analysis of first-person-singular subject expression in Louisiana French,"Aarnes Gudmestad, Katie Carmichael",TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2022,34,1,On the probability and direction of morphosyntactic lifespan change,"Lauren Fonteyn, Peter Petré",TRUE,TRUE,TRUE,TRUE,
+S13,Language Variation and Change,2022,34,1,The influence of language shift on Sanapaná vowels: An exemplar-based perspective,Jens E. L. Van Gysel,TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2021,33,3,"Structure, Chronology, and Local Social Meaning of a Supra-Local Vowel Shift: Emergence of the Low-Back-Merger Shift in New England","Monica Nesbitt, James N. Stanford",TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2012,24,1,Acoustic correlates of rhythm in New Zealand English: A diachronic study,"Jacqui Nokes, Jennifer Hay",TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2012,24,1,"Gender, prescriptivism, and language change: Morphological variation in Hebrew animate reference",Erez Levon,TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2012,24,1,"Aspects of identity in a second language: ING variation in the speech of Polish migrants living in Manchester, UK",Rob Drummond,TRUE,TRUE,FALSE,FALSE,
+S13,Language Variation and Change,2012,24,1,Variation and change in Chinese Korean: The case of vowel /y/,Wenhua Jin,TRUE,TRUE,FALSE,FALSE,"Uses Variable Rules analysis - to the best of my understanding that involves a regression, mixed effects I'm uncertain about"
+S13,Language Variation and Change,2012,24,2,Real-time evidence for age grad(ing) in late adolescence,Suzanne Evans Wagner,TRUE,TRUE,FALSE,FALSE,

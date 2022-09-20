@@ -1,0 +1,162 @@
+---
+title: 'Tidy R exercise: The tidyverse'
+author: "Márton Sóskuthy"
+date: "13/09/2022"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading data and packages
+
+This is essentially just repeating what we did last time.
+
+```{r}
+library(tidyverse)
+library(readxl)
+
+s3 <- read_excel("data/lit_sheets_uniform/S3.xlsx")
+s5 <- read_csv("data/lit_sheets_uniform/S5.csv")
+s7 <- read_csv("data/lit_sheets_uniform/S7.csv")
+s9 <- read_csv("data/lit_sheets_uniform/S9.csv") # some work to be done here!
+s11 <- read_excel("data/lit_sheets_uniform/S11.xlsx")
+s13 <- read_csv("data/lit_sheets_uniform/S13.csv")
+s17 <- read_csv("data/lit_sheets_uniform/S17.csv")
+s23 <- read_csv("data/lit_sheets_uniform/S23.csv")
+s27 <- read_csv("data/lit_sheets_uniform/S27.csv")
+```
+
+## Columns & column names (select & rename)
+
+You can change column names using the function rename(). Here's how it works (I'll say more about the %>% sign):
+
+```{r}
+# change one column name (syntax: newname="oldname"). The upshot of this syntax is that we can keep passing more functions by adding more %>% symbols in between
+s9 <- s9 %>%
+  rename(volume="Voume")
+# or we can do this: s9 <- rename(s9, volume="Voume")
+
+# change all column names using a function
+s9 <- s9 %>%
+  rename_with(tolower)
+```
+
+Your turn: 
+
+(Ex1) Create a copy of "s9" called "s9_b", and capitalise all the column names. Hint: if turning all letters to lowercase is tolower, turning all letters to uppercase must be...
+
+```{r}
+s9_b <- s9 %>%
+  rename_with(toupper)
+```
+
+(Ex2) Using s9_b, rename the column "ISSUE" to "NUMBER".
+
+```{r}
+s9_b <- s9_b %>%
+  rename(NUMBER = "ISSUE")
+```
+
+We now add all the data sets together to form a single data set. This is done using bind_rows(), which simply joins data sets together vertically (i.e. by rows). This only works if the data sets have the same column names and the same data types in each column. For instance, if s7 had a column called "misc" that the other data sets did not, we would get an error message; and if s13 had characters in the issue column instead of numbers, we would also get an error message.
+
+```{r}
+all_s <- bind_rows(s3, s5, s7, s9, s11, s13, s17, s23, s27)
+```
+
+There are some columns in here that we don't really need right now. You can get rid of columns one-by-one as follows:
+
+```{r}
+all_s <- all_s %>%
+  select(-issue, -notes)
+```
+
+We can also ask for specific columns to be kept. For instance, if we wanted a data set that only had the columns "regression" and "mixed effects", we'd use the following command. (Note that the output here is not saved, simply printed.)
+
+```{r}
+all_s %>%
+  select(regression, mixed_effects)
+```
+
+Your turn!
+
+(Ex3) Print a version of all_s with all columns that contain the letter u removed. Hint: two ways to do this: brute force (you find and list the relevant columns); OR there is a function contains(), which you can use as  an argument to select() as if it was a column name. Combined with the minus sign, this function will specify a condition for which columns should be  excluded.
+
+```{r}
+all_s %>%
+  select(-contains("u"))
+```
+
+## Adding new columns
+
+Adding new columns is very easy using the tidyverse. The relevant function is mutate() (we will discuss ifelse() together):
+
+```{r}
+all_s <- all_s %>%
+  mutate(recent = ifelse(year > 2016, "recent", "older"))
+
+```
+
+Your turn:
+
+(Ex4) Add a new column called bayesian_mixed that codes whether a paper uses bayesian mixed effects models. Hint: you'll need to use a logical operator on two logical columns here. We looked at these last time very briefly... It's one of the following: &, |, !
+
+```{r}
+all_s <- all_s %>%
+  mutate(bayesian_mixed = ifelse(mixed_effects == TRUE & bayesian == TRUE, "TRUE", "FALSE"))
+View(all_s)
+```
+
+## Filtering
+
+Filtering means keeping specific rows of the data, while removing others. One of the rows in our data set has NA as the value for the "regression" column. This will cause some issues further down the line, so -- for simplicity -- let's remove it.
+
+```{r}
+all_s <- all_s %>%
+  filter(!is.na(regression))
+```
+
+Your turn:
+
+(Ex5) Display (not save!) a version of the data set with all papers published before 2021 removed.
+
+```{r}
+all_s %>%
+  filter(year > 2021)
+```
+
+## Grouping and summarising
+
+Let's do some counting now. Basically, we want to cross-tabulate recent and one of the four logical columns. We can do this by (i) grouping by "recent", and (ii) tallying the number (or proportion - or both!) of TRUE's in each group.
+
+```{r}
+all_s %>%
+  group_by(recent) %>%
+  summarise(n=sum(regression),
+            prop=mean(regression)) %>%
+  ungroup()
+```
+
+Your turn:
+
+(Ex6) Do the cross-tabulation for one of the other logical variables.
+
+```{r}
+all_s %>%
+  group_by(recent) %>%
+  summarise(n=sum(bayesian),
+            prop=mean(bayesian)) %>%
+  ungroup()
+```
+
+## Homework
+
+Your homework is to...
+
+(1) Finish any exercises that you didn't get a chance to tackle here.
+(2) Then upload your scripts and data (from the data/lit_sheets_uniform folder) to a public GitHub repo. Make sure that you structure your repo so that your script runs OK for someone else who downloads it (i.e. the folder structure & the relative paths should be compatible).
+(3) Create an OSF repo and sync it with the GitHub repo. Make your OSF repo public.
+(4) Submit a link to your OSF repo on Canvas.
